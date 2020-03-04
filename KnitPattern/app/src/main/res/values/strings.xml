@@ -1,0 +1,35 @@
+<resources>
+    <string name="app_name">Knit Pattern</string>
+    <string name="remove_menuitem">Delete</string>
+    <string name="save_menuitem">Save</string>
+    <string name="edit_menuitem">Edit</string>
+    <string name="add_row_menuitem">Add Row</string>
+
+    <string name="lock_screen_menuitem">Disable Sleep</string>
+    <string name="unlock_screen_menuitem">Enable Sleep</string>
+
+    <string name="edit_text_hint">Enter knitting pattern</string>
+    <string name="project_title_hint">Project Title</string>
+    <string name="add_project_button_text">Add Project</string>
+
+    <string name="row_num_display">Row %d</string>
+    <string name="row_in_project_display">Row in project: </string>
+
+    <string name="no_text_entered">No pattern entered for this row.  Please edit.</string>
+
+
+    <string name="sleep_disabled_message">Screen will not sleep</string>
+    <string name="sleep_enabled_message">Screen will sleep</string>
+
+
+    <string name="navbar_edit_title">Edit</string>
+    <string name="navbar_new_project_title">New Project</string>
+
+    <string name="no_projects_message">Tap the plus button to add new projects.</string>
+
+    <string-array name="myProjects">
+        <item>Cool mittens</item>
+        <item>Awesome hat</item>
+        <item>Green headband</item>
+    </string-array>
+</resources>

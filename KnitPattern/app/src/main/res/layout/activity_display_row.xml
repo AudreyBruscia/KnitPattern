@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:focusable="true"
+    android:focusableInTouchMode="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/backButton"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_weight="4"
+            android:src="@drawable/ic_arrow_back_black_24dp"
+            android:tint="@color/colorDisplayText"/>
+
+        <TextView
+            android:id="@+id/rowDisplay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="6"
+            android:gravity="center_horizontal"
+            android:padding="20dp"
+            android:textSize="35dp"
+            android:fontFamily="sans-serif-medium"
+            android:textColor="@color/colorDisplayText"/>
+
+        <ImageView
+            android:id="@+id/forwardButton"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_weight="4"
+            android:src="@drawable/ic_arrow_forward_black_24dp"
+            android:tint="@color/colorDisplayText"/>
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:padding="10dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/patternDisplay"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:textAlignment="center"
+                android:textSize="@dimen/display_row_text_size"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="40dp"
+                android:textColor="@color/colorDisplayText" />
+        </LinearLayout>
+    </ScrollView>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/rowInProject"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="Row in project: 15"
+            android:textSize="@dimen/display_row_text_size"
+            android:layout_gravity="center_horizontal"
+            android:textColor="@color/colorDisplayText"
+            android:fontFamily="sans-serif-light" />
+        <EditText
+            android:id="@+id/rowInProjectEditText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:text="1"
+            android:textSize="@dimen/display_row_text_size"
+            android:textColor="@color/colorDisplayText"
+            android:fontFamily="sans-serif-light" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <ImageView
+            android:id="@+id/stitchMinus"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/ic_remove_black_24dp"
+            android:tint="@color/colorDisplayText"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_centerInParent="true">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="Stitch Counter:"
+                android:textSize="@dimen/display_row_text_size"
+                android:textColor="@color/colorDisplayText"
+                android:fontFamily="sans-serif-light"/>
+
+            <EditText
+                android:id="@+id/stitchCounter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:text="1"
+                android:textSize="@dimen/display_row_text_size"
+                android:textColor="@color/colorDisplayText"
+                android:fontFamily="sans-serif-light"/>
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/stitchPlus"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/ic_add_black_24dp"
+            android:tint="@color/colorDisplayText"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        android:layout_marginBottom="30dp">
+
+        <ImageView
+            android:id="@+id/spareMinus"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/ic_remove_black_24dp"
+            android:tint="@color/colorDisplayText"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_centerInParent="true">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:text="Spare Counter:"
+                    android:textSize="@dimen/display_row_text_size"
+                    android:textColor="@color/colorDisplayText"
+                    android:fontFamily="sans-serif-light" />
+
+                <EditText
+                    android:id="@+id/spareCounter"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:inputType="number"
+                    android:text="1"
+                    android:textSize="@dimen/display_row_text_size"
+                    android:textColor="@color/colorDisplayText"
+                    android:fontFamily="sans-serif-light"/>
+            </LinearLayout>
+
+
+        <ImageView
+            android:id="@+id/sparePlus"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/ic_add_black_24dp"
+            android:tint="@color/colorDisplayText"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"/>
+    </RelativeLayout>
+
+</LinearLayout>

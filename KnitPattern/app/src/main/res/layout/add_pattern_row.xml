@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/rowNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="2dp"
+        android:padding="8dp"
+        android:text="Row"
+        android:textSize="16dp"
+        android:background="@color/colorRowBackground"
+        android:textColor="@color/colorRowText"/>
+
+    <EditText
+        android:id="@+id/enterPattern"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:inputType="textCapWords"
+        android:layout_weight="8"
+        android:layout_margin="4dp"
+        android:textSize="16dp"
+        android:maxLength="190"
+        android:hint="Enter knitting pattern"/>
+
+</LinearLayout>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:title="@string/add_row_menuitem"
+        android:id="@+id/menu_add_row"
+        app:showAsAction="ifRoom"/>
+        <!--android:icon="@drawable/ic_add_black_24dp"-->
+    <item
+        android:title="@string/save_menuitem"
+        android:id="@+id/menu_save"
+        app:showAsAction="ifRoom"/>
+        <!--android:icon="@drawable/ic_save_black_24dp"-->
+</menu>
